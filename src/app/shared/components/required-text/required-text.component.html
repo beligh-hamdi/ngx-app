@@ -1,8 +1,0 @@
-<input type="text" #input
-       (input)="onChange($event.target.value)"
-       (blur)="onTouched()"
-       [disabled]="disabled">
-
-<div class="text-danger" *ngIf="controlDir && !controlDir.control.valid">
-  This filed is invalid.
-</div>

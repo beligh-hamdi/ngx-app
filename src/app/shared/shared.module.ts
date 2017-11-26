@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {RequiredTextModule} from './components/required-text/required-text.module';
 
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
@@ -8,9 +7,8 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
   imports: [
     CommonModule,
     InfiniteScrollModule,
-    RequiredTextModule
   ],
   declarations: [],
-  exports: [RequiredTextModule, InfiniteScrollModule]
+  exports: [InfiniteScrollModule]
 })
 export class SharedModule { }
