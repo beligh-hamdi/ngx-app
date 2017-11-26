@@ -1,0 +1,9 @@
+{
+  "title": "Title",
+  "links": [
+    { "path": "/home", "title": "Home"},
+    { "path": "/about", "title": "About"},
+    { "path": "/contacts", "title": "Contacts"},
+    { "path": "/tutorials", "title": "Tutorials"}
+  ]
+}
