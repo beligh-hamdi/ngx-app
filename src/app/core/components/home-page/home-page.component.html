@@ -1,0 +1,29 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">Home page</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
+
+<section>
+  <table class="table table-bordered">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Full name</th>
+      <th>Description</th>
+    </tr>
+    <tr *ngFor="let repo of repos$ | async; let count = index">
+      <td><b>{{ count+1 }}</b></td>
+      <td>{{ repo.name }}</td>
+      <td>{{ repo.fullName }}</td>
+      <td>{{ repo.description }}</td>
+    </tr>
+  </table>
+</section>
+
+
+
+
+
+

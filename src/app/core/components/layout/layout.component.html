@@ -1,0 +1,23 @@
+<app-loading-bar></app-loading-bar>
+<div #refHeader><ng-content select="[layout-header]"></ng-content></div>
+<div *ngIf="refHeader.childNodes.length === 0">
+  Navbar
+</div>
+<main role="main" class="container">
+  <div #refBody><ng-content select="[layout-body]"></ng-content></div>
+  <div *ngIf="refBody.childNodes.length === 0">
+    Body
+  </div>
+</main>
+<div #refFooter><ng-content select="[layout-footer]"></ng-content></div>
+<div *ngIf="refFooter.childNodes.length === 0">
+  Footer
+</div>
+
+
+
+
+
+
+
+

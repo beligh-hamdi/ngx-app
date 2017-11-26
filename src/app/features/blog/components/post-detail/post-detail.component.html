@@ -1,0 +1,7 @@
+<div class="card" *ngIf="post">
+  <app-media class="card-img-top" style="max-width: 200px;" [id]="post.featured_media" [config]="config"></app-media>
+  <div class="card-body">
+    <h4 class="card-title"  [innerHTML]="post.title.rendered"></h4>
+    <div [innerHTML]="post.content.rendered"></div>
+  </div>
+</div>

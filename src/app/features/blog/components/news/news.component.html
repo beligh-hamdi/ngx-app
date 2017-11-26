@@ -1,0 +1,25 @@
+<section>
+  <div class="card" *ngFor="let post of posts; let count = index">
+    <app-media class="card-img-top" [id]="post.featured_media" alt="Card image cap"></app-media>
+    <div class="card-body">
+      <h4 class="card-title" [innerHTML]="post.title.rendered"></h4>
+      <div class="card-text" [innerHTML]="post.excerpt.rendered"></div>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+      <a class="btn btn-link" [routerLink]="['/blog', post.id]" >Details</a>
+    </div>
+  </div>
+</section>
+
+<div class="search-results"
+     infiniteScroll
+     [infiniteScrollDistance]="2"
+     [infiniteScrollThrottle]="50"
+     (scrolled)="onScroll()">
+</div>
+
+
+
+
+
