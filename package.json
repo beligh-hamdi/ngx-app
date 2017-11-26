@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ghp": "node_modules/.bin/ng build --prod --base-href=https://beligh-hamdi.github.io/ && node_modules/.bin/ngh"
+    "ghp": "node_modules/.bin/ng build --prod --base-href=https://beligh-hamdi.github.io/ngx-app && node_modules/.bin/ngh"
   },
   "private": true,
   "dependencies": {
